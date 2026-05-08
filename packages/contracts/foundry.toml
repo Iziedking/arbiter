@@ -25,5 +25,9 @@ number_underscore = "thousands"
 [rpc_endpoints]
 arc_testnet = "${ARC_RPC_HTTP}"
 
-# Verification config (Etherscan-compatible) is filled in during Phase 1
-# once the Arc explorer verification endpoint is confirmed.
+# testnet.arcscan.app is a Blockscout instance, not Etherscan.
+# Foundry reads this block when --verify is passed; combine with
+# `--verifier blockscout` at the CLI so forge speaks Blockscout's API.
+# The "key" field is required by Foundry but ignored by Blockscout.
+[etherscan]
+arc_testnet = { key = "blockscout-no-key-needed", url = "https://testnet.arcscan.app/api/", chain = 5042002 }
