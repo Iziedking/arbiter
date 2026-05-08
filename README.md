@@ -33,13 +33,13 @@ Solidity 0.8.27 + Foundry. Node 22 + TypeScript with viem v2, Hono, BullMQ, and 
 
 ## Arc testnet reference
 
-| | |
-|---|---|
-| Chain ID | 5042002 |
-| RPC | https://rpc.testnet.arc.network |
-| WebSocket | wss://rpc.testnet.arc.network |
-| Explorer | https://testnet.arcscan.app |
-| Faucet | https://faucet.circle.com |
+|           |                                 |
+| --------- | ------------------------------- |
+| Chain ID  | 5042002                         |
+| RPC       | https://rpc.testnet.arc.network |
+| WebSocket | wss://rpc.testnet.arc.network   |
+| Explorer  | https://testnet.arcscan.app     |
+| Faucet    | https://faucet.circle.com       |
 
 ## License
 

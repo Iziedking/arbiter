@@ -1,0 +1,15 @@
+{
+  "name": "@arbiter/contracts",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "test:ci": "FOUNDRY_PROFILE=ci forge test",
+    "fmt": "forge fmt",
+    "fmt:check": "forge fmt --check",
+    "lint": "forge fmt --check",
+    "clean": "forge clean"
+  }
+}

@@ -1,0 +1,29 @@
+[profile.default]
+src = "src"
+test = "test"
+script = "script"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.27"
+optimizer = true
+optimizer_runs = 200
+gas_reports = ["*"]
+fs_permissions = [{ access = "read", path = "./" }]
+
+[profile.ci]
+fuzz = { runs = 1000 }
+verbosity = 4
+
+[fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = false
+int_types = "long"
+quote_style = "double"
+number_underscore = "thousands"
+
+[rpc_endpoints]
+arc_testnet = "${ARC_RPC_HTTP}"
+
+# Verification config (Etherscan-compatible) is filled in during Phase 1
+# once the Arc explorer verification endpoint is confirmed.
